@@ -1,5 +1,6 @@
-use std::{env, path::PathBuf};
+use std::{path::PathBuf}; //"env" was imported previously
 
+/*
 fn home() -> Option<PathBuf> {
     env::var_os("HOME")
         .and_then(|h| if h.is_empty() { None } else { Some(h) })
@@ -13,6 +14,7 @@ fn xdg_config() -> Option<PathBuf> {
         .map(|p| p.join("neothesia"))
         .or_else(|| home().map(|h| h.join(".config").join("neothesia")))
 }
+*/
 
 pub fn default_sf2() -> Option<PathBuf> {
     #[cfg(all(target_family = "unix", not(target_os = "macos")))]

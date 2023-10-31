@@ -5,16 +5,17 @@ members = [
     "neothesia",
     "neothesia-cli",
     "neothesia-core",
+    "neothesia-pipelines",
     "midi-file",
     "midi-io",
 ]
 
-default-members = ["neothesia"]
 resolver = "2"
+
+default-members = ["neothesia"]
 
 [workspace.dependencies]
 wgpu = "0.17.1"
-glyphon = { git = "https://github.com/grovesNL/glyphon.git", rev = "20f0f8fa80e0d0df4c63634ce9176fa489546ca9" }
 log = "0.4"
 bytemuck = { version = "1.5", features = ["derive"] }
 env_logger = "0.10"
