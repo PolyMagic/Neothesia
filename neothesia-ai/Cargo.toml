@@ -5,12 +5,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-anyhow = "1.0.89"
+anyhow = "1.0.95"
 midly = "0.5.3"
 ndarray = "0.16.1"
 rten = "0.13.1"
-rten-tensor = "0.13.1"
+rten-tensor = "0.15.1"
 serde = "1.0.210"
-serde_json = "1.0.128"
+serde_json = "1.0.135"
 symphonia = { version = "0.5.4", features = ["mp3"] }
 symphonium = { version = "0.2.2", features = ["mp3"] }

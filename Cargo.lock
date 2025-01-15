@@ -161,9 +161,9 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.93"
+version = "1.0.95"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c95c10ba0b00a02636238b814946408b1322d5ac4760326e6fb8ec956d85775"
+checksum = "34ac096ce696dc2fcabef30516bb13c0a68a11d30131d3df6f04711467681b04"
 
 [[package]]
 name = "approx"
@@ -520,9 +520,9 @@ checksum = "c3ac9f8b63eca6fd385229b3675f6cc0dc5c8a5c8a54a59d4f52ffd670d87b0c"
 
 [[package]]
 name = "bytemuck"
-version = "1.20.0"
+version = "1.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b37c88a63ffd85d15b406896cc343916d7cf57838a847b3a6f2ca5d39a5695a"
+checksum = "ef657dfab802224e671f5818e9a4935f9b1957ed18e58292690cc39e7a4092a3"
 dependencies = [
  "bytemuck_derive",
 ]
@@ -2441,7 +2441,7 @@ dependencies = [
  "midly",
  "ndarray",
  "rten",
- "rten-tensor",
+ "rten-tensor 0.15.1",
  "serde",
  "serde_json",
  "symphonia",
@@ -3472,7 +3472,7 @@ dependencies = [
  "num_cpus",
  "rayon",
  "rten-simd",
- "rten-tensor",
+ "rten-tensor 0.13.1",
  "rten-vecmath",
  "rustc-hash 2.1.0",
  "smallvec",
@@ -3490,6 +3490,15 @@ name = "rten-tensor"
 version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "575ec5dbc7e7059eb4271bca1c06420d240e8a377593cbac41a0c7227ec8645d"
+dependencies = [
+ "smallvec",
+]
+
+[[package]]
+name = "rten-tensor"
+version = "0.15.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dd317455d579ca1549d9b96fb1fb4b5906b90231f83282c180afe4a5a5b0ba8d"
 dependencies = [
  "smallvec",
 ]
@@ -3655,9 +3664,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.133"
+version = "1.0.135"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c7fceb2473b9166b2294ef05efcb65a3db80803f0b03ef86a5fc88a2b85ee377"
+checksum = "2b0d7ba2887406110130a978386c4e1befb98c674b4fba677954e4db976630d9"
 dependencies = [
  "itoa",
  "memchr",
